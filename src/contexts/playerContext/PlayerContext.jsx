@@ -1,10 +1,12 @@
-import { useEffect, useState } from "react";
-import { createContext, useRef } from "react";
+import { useContext, useEffect, useState, createContext, useRef } from "react";
 import { songsData } from "../../assets/assets";
+import { SessionContext } from "../sessionContext/SessionContext";
 
 export const PlayerContext = createContext()
 
 const PlayerContextProvider = (props) => {
+
+    const { session } = useContext(SessionContext)
 
     const audioRef = useRef()
     const seekBg = useRef()
@@ -75,7 +77,7 @@ const PlayerContextProvider = (props) => {
                 })
             }
         }, 1000)
-    }, [audioRef])
+    }, [audioRef, session])
 
     const contextValue = {
         audioRef,
