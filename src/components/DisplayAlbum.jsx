@@ -39,7 +39,7 @@ const DisplayAlbum = () => {
                     <p className='text-white'>
                         <b className='mr-4 text[#a7a7a7]'>{index + 1}</b>
                         <img className='inline w-10 mr-5' src={item.image} alt="" />
-                        {item.name}
+                        <p className='text-[15px] hidden sm:inline'>{item.name}</p>
                     </p>
                     <p className='text-[15px]'>{albumData.name}</p>
                     <p className='text-[15px] hidden sm:block'>5 days ago</p>
