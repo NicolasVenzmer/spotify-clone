@@ -5,3 +5,13 @@
 ::-webkit-scrollbar {
     display: none;
 }
+
+.custom-swiper .swiper-button-next,
+.custom-swiper .swiper-button-prev {
+    color: #ffffff;
+}
+
+.custom-swiper .swiper-button-next:hover,
+.custom-swiper .swiper-button-prev:hover {
+    color: #bebebe;
+}

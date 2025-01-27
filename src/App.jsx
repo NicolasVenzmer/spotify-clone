@@ -6,7 +6,6 @@ import { PlayerContext } from './contexts/playerContext/PlayerContext'
 import Login from './pages/Login'
 import { SessionContext } from './contexts/sessionContext/SessionContext'
 
-
 const App = () => {
 
   const { audioRef, track } = useContext(PlayerContext)
